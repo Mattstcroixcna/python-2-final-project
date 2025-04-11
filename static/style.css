@@ -1,0 +1,23 @@
+.heading {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #F7BE16;
+    padding: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font: Impact;
+
+}
+
+.maintext {
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    color: #F7BE16;
+    font: Impact;
+
+}
+
+body {
+    background-color: #216583
+}
