@@ -21,3 +21,33 @@
 body {
     background-color: #216583
 }
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav li {
+    display: inline-block;
+}
+  
+nav a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #216583;
+    background-color: #F7BE16;
+}
+  
+nav a:hover {
+    background-color: #555;
+    color: #F7BE16;
+}
+
+.button {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #216583;
+    background-color: #F7BE16;
+}

@@ -6,4 +6,8 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route("/library")
+def ibrary():
+    return render_template('library.html')
+
 app.run()
