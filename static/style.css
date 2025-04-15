@@ -44,10 +44,15 @@ nav a:hover {
     color: #F7BE16;
 }
 
-.button {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #216583;
+form {
+color: #F7BE16;
+margin: 10px;
+}
+
+button {
     background-color: #F7BE16;
+    color: #216583;
+    border: none;
+    height: 25px;
+
 }
