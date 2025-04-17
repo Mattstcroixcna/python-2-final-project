@@ -12,9 +12,7 @@ save_location = "static/images"
 def home():
     return render_template('index.html')
 
-app.route("/remove")
-def remove_game():
-    return render_template('remove.html')
+
     
 @app.route("/library", methods=["GET"])
 def index():
@@ -54,5 +52,17 @@ def add():
         session.modified = True
         return redirect("/library")
 
+@app.route("/remove_game/<int:game_id>", methods=["POST"])
+def remove_game(game_id):
+    if "videoGames" in session:
+        try:
+            session["videoGames"].pop(game_id)
+            session.modified = True
+            print(f"Game {game_id} removed successfully.")
+        except IndexError:
+            flash("Game not found.", "error")
 
-app.run()
+    return redirect("/library")
+
+if __name__ == "__main__":
+   app.run(debug=True, host="0.0.0.0")

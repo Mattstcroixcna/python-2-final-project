@@ -10,6 +10,9 @@
                     <p>release year: {{ game.year  }}</p>
                     <p>rating: {{ game.rate  }}</p>
                     <image height = 128 src="{{ file_location }}/{{ game.image }}" class="card_img-top"/>
+                    <form action="/remove_game/{{ loop.index0 }}" method="POST">
+                        <button type="submit" class="delete">Delete</button>
+                    </form>
                 </div>
             </div>
         {% endfor %}
