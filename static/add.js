@@ -7,6 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function submit() {
     validateForm();
+    if (validateForm()) {
+        let name = x
+        let year = y
+        let rate = z
+        let image 
+    }
 
 }
 

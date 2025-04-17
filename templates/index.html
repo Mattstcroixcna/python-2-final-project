@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <title>GAMES</title>
-    <link rel="stylesheet" href="static\style.css">
-
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/library">Library</a></li>
-            <li><a href="/add">Add</a></li>
-
-        </ul>
-    </nav>
-    <p class="heading">YOUR GAME COLLECTION</p>
-    <p class="maintext">head to the Add page to add some games!!</p>
-</body>
-</html>
+{% extends "layout.html" %}
+{% block body %}
+<p class="heading">YOUR GAME COLLECTION</p>
+<p class="maintext">head to the Add page to add some games!!</p>
+{% endblock %}
